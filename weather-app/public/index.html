@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Weather Application</title>
+        <link rel="stylesheet" href="css/styles.css">
+        <!-- Add Leaflet CSS -->
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+        <!-- Add Leaflet JS -->
+        <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    </head>
+    
+    <body>
+        <div class="container">
+            <h1>Weather Application</h1>
+            <div class="search-section">
+                <input type="text" id="city-name" placeholder="Enter city name">
+                <button id="get-weather-btn">Get Weather</button>
+            </div>
+            <div id="weather-info">
+                <h2>Weather in <span id="city-display">-</span></h2>
+                <img id="weather-icon" alt="Weather Icon" />
+                <p id="temperature">Temperature: -</p>
+                <p id="feels-like">Feels Like: -</p>
+                <p id="description">Description: -</p>
+                <p id="humidity">Humidity: -</p>
+                <p id="pressure">Pressure: -</p>
+                <p id="wind-speed">Wind Speed: -</p>
+                <p id="rain-volume">Rain Volume: -</p>
+                <p id="coordinates">Coordinates: -</p>
+            </div>
+            
+            <!-- Map container -->
+            <div id="map" style="height: 400px; width: 100%; margin-top: 20px;"></div>   
+
+            <!-- Add a button to get a joke -->
+            <button id="get-joke-btn">Get a Random Joke</button>
+            <p id="joke"></p>
+
+            <!-- Add a button to get IP location -->
+            <button id="get-ip-location-btn">Get My IP Location</button>
+            <p id="ip-location"></p>
+
+        </div>
+
+
+ 
+        <script src="js/app.js"></script>
+    </body>
+</html>
